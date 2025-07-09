@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
     rm NuggetJumbo.xcframework.zip
 
     echo "Downloading and unzipping ZApiManager..."
-    curl -L https://github.com/pranavzmt/nugget-sdk-ios/releases/download/9.0.0-NuggetApiManager/ZApiManager.xcframework.zip -o ZApiManager.xcframework.zip
+    curl -L https://github.com/pranavzmt/nugget-sdk-ios/releases/download/99.0.0-NuggetApiManager/ZApiManager.xcframework.zip -o ZApiManager.xcframework.zip
     verify_checksum "ZApiManager.xcframework.zip" "cede59448bc7942e971fffa4421d510f28c53ca5408087ab3f980da646d1e63c"
     unzip -o ZApiManager.xcframework.zip
     rm ZApiManager.xcframework.zip
