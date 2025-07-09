@@ -16,8 +16,7 @@ let package = Package(
     dependencies: [
         // Dependencies previously managed by NuggetExternalDependency, now direct
         .package(url: "https://github.com/patchthecode/JTAppleCalendar", .exact("8.0.5")),
-        .package(url: "https://github.com/kean/Nuke.git", .exact("10.7.1")),
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.10.2"))
+        .package(url: "https://github.com/kean/Nuke.git", .exact("10.7.1"))
     ],
     targets: [
         // Main Nugget binary
@@ -52,8 +51,7 @@ let package = Package(
                 "NuggetApiManager",
                 // Products from former NuggetExternalDependency
                 .product(name: "JTAppleCalendar", package: "JTAppleCalendar"),
-                .product(name: "Nuke", package: "Nuke"),
-                .product(name: "Alamofire", package: "Alamofire")
+                .product(name: "Nuke", package: "Nuke")
             ]
         ),
         .testTarget(
