@@ -22,8 +22,8 @@ let package = Package(
         // Main Nugget binary
         .binaryTarget(
             name: "Nugget",
-            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/99.0.0-Nugget-Test/Nugget.xcframework.zip",
-            checksum: "1dcac25f5a42819b2e5b4cea070efa26356adf900df65c7ba5bb0ff5b05b4375"
+            url: "https://github.com/pranavzmt/nugget-sdk-ios/releases/download/99.0.0-NuggetCode/Nugget.xcframework.zip",
+            checksum: "df3cb0cecbad05915bdca09d0513d9325a03b9e954a02d7d8ee66b83e57e7ed8"
         ),
         // Binary targets previously for NuggetInternalDependency, now direct dependencies for NuggetSDK
         .binaryTarget(
@@ -38,8 +38,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "NuggetApiManager",
-            url: "https://github.com/pranavzmt/nugget-sdk-ios/releases/download/99.0.0-NuggetApiManager/ZApiManager.xcframework.zip",
-            checksum: "cede59448bc7942e971fffa4421d510f28c53ca5408087ab3f980da646d1e63c"
+            url: "https://github.com/pranavzmt/nugget-sdk-ios/releases/download/99.0.1-NuggetApiManager/ZApiManager.xcframework.zip",
+            checksum: "c0739d668a823ece16357bd85dbe514b6e3b3ed2063a3dcd46f4e71c124cd7f3"
         ),
         .target(
             name: "NuggetSDK",

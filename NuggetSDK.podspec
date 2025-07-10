@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NuggetSDK'
-  s.version          = '99.0.0'
+  s.version          = '99.0.4'
   s.summary          = 'The Nugget SDK for iOS.'
   s.description      = <<-DESC
                      A longer description of NuggetSDK.
@@ -33,8 +33,8 @@ Pod::Spec.new do |s|
     }
 
     echo "Downloading and unzipping Nugget..."
-    curl -L https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/99.0.0-Nugget-Test/Nugget.xcframework.zip -o Nugget.xcframework.zip
-    verify_checksum "Nugget.xcframework.zip" "1dcac25f5a42819b2e5b4cea070efa26356adf900df65c7ba5bb0ff5b05b4375"
+    curl -L https://github.com/pranavzmt/nugget-sdk-ios/releases/download/99.0.0-NuggetCode/Nugget.xcframework.zip -o Nugget.xcframework.zip
+    verify_checksum "Nugget.xcframework.zip" "df3cb0cecbad05915bdca09d0513d9325a03b9e954a02d7d8ee66b83e57e7ed8"
     unzip -o Nugget.xcframework.zip
     rm Nugget.xcframework.zip
 
@@ -51,8 +51,8 @@ Pod::Spec.new do |s|
     rm NuggetJumbo.xcframework.zip
 
     echo "Downloading and unzipping ZApiManager..."
-    curl -L https://github.com/pranavzmt/nugget-sdk-ios/releases/download/99.0.0-NuggetApiManager/ZApiManager.xcframework.zip -o ZApiManager.xcframework.zip
-    verify_checksum "ZApiManager.xcframework.zip" "cede59448bc7942e971fffa4421d510f28c53ca5408087ab3f980da646d1e63c"
+    curl -L https://github.com/pranavzmt/nugget-sdk-ios/releases/download/99.0.1-NuggetApiManager/ZApiManager.xcframework.zip -o ZApiManager.xcframework.zip
+    verify_checksum "ZApiManager.xcframework.zip" "c0739d668a823ece16357bd85dbe514b6e3b3ed2063a3dcd46f4e71c124cd7f3"
     unzip -o ZApiManager.xcframework.zip
     rm ZApiManager.xcframework.zip
   CMD
