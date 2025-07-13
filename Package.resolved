@@ -2,15 +2,6 @@
   "object": {
     "pins": [
       {
-        "package": "JTAppleCalendar",
-        "repositoryURL": "https://github.com/patchthecode/JTAppleCalendar",
-        "state": {
-          "branch": null,
-          "revision": "718f0ab68ba0fcd2bc134f6e9d30edc1b9b038e1",
-          "version": "8.0.5"
-        }
-      },
-      {
         "package": "Nuke",
         "repositoryURL": "https://github.com/kean/Nuke.git",
         "state": {

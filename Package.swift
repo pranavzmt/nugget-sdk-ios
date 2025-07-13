@@ -14,16 +14,14 @@ let package = Package(
             targets: ["NuggetSDK"]),
     ],
     dependencies: [
-        // Dependencies previously managed by NuggetExternalDependency, now direct
-        .package(url: "https://github.com/patchthecode/JTAppleCalendar", .exact("8.0.5")),
         .package(url: "https://github.com/kean/Nuke.git", .exact("10.7.1"))
     ],
     targets: [
         // Main Nugget binary
         .binaryTarget(
             name: "Nugget",
-            url: "https://github.com/pranavzmt/nugget-sdk-ios/releases/download/99.0.0-NuggetCode/Nugget.xcframework.zip",
-            checksum: "df3cb0cecbad05915bdca09d0513d9325a03b9e954a02d7d8ee66b83e57e7ed8"
+            url: "https://github.com/pranavzmt/nugget-sdk-ios/releases/download/99.0.1-NuggetCode/Nugget.xcframework.zip",
+            checksum: "01d0b0d2f0a75371b04349b4ca3f23ecabae05d6043fbad33535daee23f83565"
         ),
         // Binary targets previously for NuggetInternalDependency, now direct dependencies for NuggetSDK
         .binaryTarget(
@@ -50,7 +48,6 @@ let package = Package(
                 "NuggetJumbo",
                 "NuggetApiManager",
                 // Products from former NuggetExternalDependency
-                .product(name: "JTAppleCalendar", package: "JTAppleCalendar"),
                 .product(name: "Nuke", package: "Nuke")
             ]
         ),

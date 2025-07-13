@@ -1,14 +1,14 @@
 Pod::Spec.new do |s|
   s.name             = 'NuggetSDK'
-  s.version          = '99.0.4'
+  s.version          = '99.0.5'
   s.summary          = 'The Nugget SDK for iOS.'
   s.description      = <<-DESC
                      A longer description of NuggetSDK.
                      DESC
-  s.homepage         = 'https://github.com/Zomato-Nugget/nugget-sdk-ios'
+  s.homepage         = 'https://github.com/pranavzmt/nugget-sdk-ios'
   s.license          = { :type => 'MIT', :file => 'LICENSE' } # Assuming MIT, create a LICENSE file if you don't have one
-  s.author           = { 'Zomato' => 'rajesh.budhiraja@zomato.com' }
-  s.source           = { :git => 'https://github.com/Zomato-Nugget/nugget-sdk-ios'}
+  s.author           = { 'Zomato' => 'singh.pranav@zomato.com' }
+  s.source           = { :git => 'https://github.com/pranavzmt/nugget-sdk-ios'}
 
   s.ios.deployment_target = '14.0'
   s.swift_versions = ['5.0']
@@ -16,7 +16,6 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/NuggetSDK/**/*.swift'
 
   # External dependencies
-  s.dependency 'JTAppleCalendar', '8.0.5'
   s.dependency 'Nuke', '10.7.1'
   
   # Download and prepare all required XCFrameworks with checksum verification
@@ -33,8 +32,8 @@ Pod::Spec.new do |s|
     }
 
     echo "Downloading and unzipping Nugget..."
-    curl -L https://github.com/pranavzmt/nugget-sdk-ios/releases/download/99.0.0-NuggetCode/Nugget.xcframework.zip -o Nugget.xcframework.zip
-    verify_checksum "Nugget.xcframework.zip" "df3cb0cecbad05915bdca09d0513d9325a03b9e954a02d7d8ee66b83e57e7ed8"
+    curl -L https://github.com/pranavzmt/nugget-sdk-ios/releases/download/99.0.1-NuggetCode/Nugget.xcframework.zip -o Nugget.xcframework.zip
+    verify_checksum "Nugget.xcframework.zip" "01d0b0d2f0a75371b04349b4ca3f23ecabae05d6043fbad33535daee23f83565"
     unzip -o Nugget.xcframework.zip
     rm Nugget.xcframework.zip
 
