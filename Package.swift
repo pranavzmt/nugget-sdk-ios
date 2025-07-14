@@ -13,15 +13,12 @@ let package = Package(
             name: "NuggetSDK",
             targets: ["NuggetSDK"]),
     ],
-    dependencies: [
-        .package(url: "https://github.com/kean/Nuke.git", .exact("10.7.1"))
-    ],
     targets: [
         // Main Nugget binary
         .binaryTarget(
             name: "Nugget",
-            url: "https://github.com/pranavzmt/nugget-sdk-ios/releases/download/99.0.1-NuggetCode/Nugget.xcframework.zip",
-            checksum: "01d0b0d2f0a75371b04349b4ca3f23ecabae05d6043fbad33535daee23f83565"
+            url: "https://github.com/pranavzmt/nugget-sdk-ios/releases/download/99.0.2-NuggetCode/Nugget.xcframework.zip",
+            checksum: "c34586986c55de2362e9efe29ec8ceb2217412e16927ced2b01a110a93483a20"
         ),
         // Binary targets previously for NuggetInternalDependency, now direct dependencies for NuggetSDK
         .binaryTarget(
@@ -46,9 +43,7 @@ let package = Package(
                 // Binaries from former NuggetInternalDependency
                 "NuggetFoundation",
                 "NuggetJumbo",
-                "NuggetApiManager",
-                // Products from former NuggetExternalDependency
-                .product(name: "Nuke", package: "Nuke")
+                "NuggetApiManager"
             ]
         ),
         .testTarget(

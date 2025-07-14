@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NuggetSDK'
-  s.version          = '99.0.5'
+  s.version          = '99.0.6'
   s.summary          = 'The Nugget SDK for iOS.'
   s.description      = <<-DESC
                      A longer description of NuggetSDK.
@@ -14,9 +14,6 @@ Pod::Spec.new do |s|
   s.swift_versions = ['5.0']
 
   s.source_files = 'Sources/NuggetSDK/**/*.swift'
-
-  # External dependencies
-  s.dependency 'Nuke', '10.7.1'
   
   # Download and prepare all required XCFrameworks with checksum verification
   s.prepare_command = <<-CMD
@@ -32,8 +29,8 @@ Pod::Spec.new do |s|
     }
 
     echo "Downloading and unzipping Nugget..."
-    curl -L https://github.com/pranavzmt/nugget-sdk-ios/releases/download/99.0.1-NuggetCode/Nugget.xcframework.zip -o Nugget.xcframework.zip
-    verify_checksum "Nugget.xcframework.zip" "01d0b0d2f0a75371b04349b4ca3f23ecabae05d6043fbad33535daee23f83565"
+    curl -L https://github.com/pranavzmt/nugget-sdk-ios/releases/download/99.0.2-NuggetCode/Nugget.xcframework.zip -o Nugget.xcframework.zip
+    verify_checksum "Nugget.xcframework.zip" "c34586986c55de2362e9efe29ec8ceb2217412e16927ced2b01a110a93483a20"
     unzip -o Nugget.xcframework.zip
     rm Nugget.xcframework.zip
 
